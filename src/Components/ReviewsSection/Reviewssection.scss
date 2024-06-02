@@ -1,0 +1,52 @@
+.reviews-section {
+    text-align: center;
+    padding: 3em;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(110, 165, 110); 
+
+    h2 {
+        font-size: 2em;
+        font-family: Goudy Old Style;
+        margin-bottom: 0.2em;
+        color: rgb(240, 248, 241);
+    }
+
+    .reviews-container {
+        display: flex;
+        justify-content: center;
+        gap: 2em; 
+        flex-wrap: wrap; 
+    }
+
+    .review-item {
+        position: relative;
+        max-width: 300px;
+        padding: 1em;
+        text-align: center; 
+        margin: 2em 1em;
+        font-style: italic;
+
+        .quote-icon {
+            font-size: 5em; 
+            color: #fff;
+            opacity: 0.2;
+            margin-bottom: -0.5em; 
+        }
+
+        p {
+            font-size: 1.2em;
+            color: rgb(240, 248, 241);
+            margin: 0.5em 0;
+            line-height: 1.5em;
+        }
+
+        .review-author {
+            font-size: 1em;
+            color: rgb(240, 248, 241);
+            margin-top: 1em;
+            font-style: normal;
+        }
+    }
+}

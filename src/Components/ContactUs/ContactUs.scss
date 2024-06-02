@@ -1,0 +1,114 @@
+body {
+    background-color: #ffffff;
+    color: #fff;
+    font-family: Goudy Old Style;
+}
+
+.contact-us {
+    padding: 50px 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .contact-info {
+        flex: 1;
+        min-width: 300px;
+        padding: 20px;
+
+        h1 {
+            font-size: 2.2rem;
+            font-family: Goudy Old Style;
+            color: rgb(110, 165, 110);
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e64e12;
+            display: inline-block;
+        }
+
+        p {
+            font-size: 1.3rem;
+            font-family: Goudy Old Style;
+            margin-bottom: 20px;
+            color: #0c0b0b;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            color: #e64e12;
+
+            i {
+                font-size: 1.5rem;
+                color: #faf8f8;
+                margin-left: 90px;
+            }
+
+            p {
+                margin: 0;
+                font-size: 1rem;
+                margin-left: 20px;
+            }
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+
+    .contact-form {
+        flex: 1;
+        min-width: 200px;
+        padding: 60px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            .form-group {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+
+                input,
+                textarea {
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    border: 1px solid #e64e12;
+                    background-color: transparent;
+                    color: #070707;
+                    border-radius: 5px;
+                    font-size: 1rem;
+                    outline: none;
+                }
+
+                textarea {
+                    resize: none;
+                }
+            }
+
+            button {
+                padding: 10px 20px;
+                background-color: rgb(110, 165, 110);
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                position: relative;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                align-self: flex-start;
+
+                &:hover {
+                    background-color: rgba(109, 172, 112, 0.5);
+                }
+            }
+        }
+    }
+}

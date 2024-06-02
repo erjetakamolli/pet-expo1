@@ -1,0 +1,122 @@
+section {
+    text-align: center;
+    padding: 1.1em;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); 
+        z-index: 1;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin-top: 50px;
+        margin-bottom: 0.5em;
+        font-family: Goudy Old Style;
+        position: relative;
+        z-index: 2;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+
+        .no-results {
+            padding: 7.7em;
+            font-size: 1.3rem;
+            color: #ffffff;
+            margin-top: 50px;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            top: -120px;
+        }
+
+        .animal-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 1em;
+            padding: 1em;
+            width: 200px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
+
+            h3 {
+                font-size: 1.5em;
+                margin: 0.5em 0;
+                color: #0a831e;
+            }
+
+            p {
+                font-size: 1.1em;
+                color: #e64e12;
+                font-family: Goudy Old Style;
+            }
+        }
+    }
+        input[type="text"] {
+            padding: 0.4em;
+            margin: 1em 0;
+            width: 80%;
+            max-width: 270px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+            position: relative;
+            transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+            z-index: 2;
+            background-color: #fff;
+            color: #333;
+            font-size: 1em;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23888888"><path d="M21.954 20.335l-3.826-3.826A7.934 7.934 0 0 0 18 10c0-4.411-3.589-8-8-8S2 5.589 2 10s3.589 8 8 8c1.585 0 3.043-.466 4.291-1.26l3.826 3.826c.146.146.335.22.525.22s.38-.073.525-.22a.744.744 0 0 0 0-1.05zM4 10c0-3.313 2.687-6 6-6s6 2.687 6 6-2.687 6-6 6-6-2.687-6-6z"/></svg>');
+            background-repeat: no-repeat;
+            background-size: 1.5em;
+            background-position: calc(100% - 1em) center;
+            padding-right: 3em;
+            outline: none;
+        }
+    
+        input[type="text"]:hover,
+        input[type="text"]:focus {
+            border-color: #999;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 0 2px rgba(0, 0, 0, 0.1);
+        }
+        
+}
+
+.cats-section {
+    background-image: url('../../Images/background3.jpg');
+}
+
+.dogs-section {
+    background-image: url('../../Images/background2.jpg');
+}
+
+.birds-section {
+    background-image: url('../../Images/background1.jpg');
+}

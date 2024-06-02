@@ -1,0 +1,76 @@
+.background-slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.text-overlay {
+    position: absolute;
+    color: rgb(201, 221, 204);
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(99, 90, 90, 0.5);
+    font-family: Goudy Old Style;
+    text-align: left;
+    padding: 20px;
+    background: rgba(50, 119, 54, 0.5);
+    border-radius: 12px;
+}
+
+.text-overlay p {
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+.read-more-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: transparent; 
+    color: #f3f2ed; 
+    font-family: Goudy Old Style;
+    text-decoration: none;
+    border: 2px solid #e6e4d9; 
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.read-more-button:hover {
+    background-color: rgba(109, 172, 112, 0.5);
+    color: rgba(8, 8, 8, 0.644); 
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+    scroll-behavior: smooth;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

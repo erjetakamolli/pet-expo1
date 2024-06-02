@@ -1,0 +1,129 @@
+.footer {
+    background-color: rgb(110, 165, 110);
+    color: #fff;
+    padding: 1px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 20%;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    font-family: Goudy Old Style;
+    margin-bottom: 15px;
+}
+
+.footer-column p {
+    margin-bottom: 25px;
+    font-size: 17px;
+    font-family: Goudy Old Style;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 4px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-column ul li a:hover {
+    color: #e64e12;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.social-icons li {
+    margin-right: 6px; 
+}
+
+.social-icons li:last-child {
+    margin-right: 0; 
+}
+
+.social-icons a {
+    display: block;
+    width: 40px; 
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%; 
+    transition: background-color 0.6s ease; 
+}
+
+.social-icons img {
+    width: 20px; 
+    height: 20px;
+}
+
+.footer-bottom {
+    background-color: #2b352c;;
+    padding: 0.1px 0;
+    text-align: center;
+    font-size: 12px;
+    font-family: Goudy Old Style;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .footer-column {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .social-icons li {
+        margin: 0 5px;
+    }
+
+    .social-icons a {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social-icons img {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-icons a {
+        width: 25px;
+        height: 25px;
+    }
+
+    .social-icons img {
+        width: 12px;
+        height: 12px;
+    }
+}
